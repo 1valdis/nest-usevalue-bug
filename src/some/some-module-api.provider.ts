@@ -1,5 +1,5 @@
 import { Injectable, Inject } from "@nestjs/common";
-import { SomeModuleOptionsSymbol, SomeModuleOptions } from "./some-module.provider";
+import { SomeModuleOptionsSymbol, SomeModuleOptions } from "./some.constants";
 
 @Injectable()
 export class SomeModuleApi {
