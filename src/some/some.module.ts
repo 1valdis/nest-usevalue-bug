@@ -1,5 +1,6 @@
 import { DynamicModule } from '@nestjs/common';
-import { SomeModuleOptions, SomeModuleOptionsSymbol } from './some-module.provider';
+import { SomeModuleProvider } from './some-module.provider';
+import { SomeModuleOptions, SomeModuleOptionsSymbol } from './some.constants';
 import { SomeModuleApi } from './some-module-api.provider';
 
 export class SomeModule {
@@ -13,7 +14,7 @@ export class SomeModule {
           useValue: options,
         },
         SomeModuleApi,
-        SomeModule,
+        SomeModuleProvider,
       ]
     }
   }
